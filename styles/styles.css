@@ -1,0 +1,463 @@
+/** 
+ * Chris Sciavolino, Rachel Goffin, Marquise Riley
+ * cds253, rbg92, msr259
+ * INFO 1300 Applefest Project
+ */
+
+html, body {
+    /* Basic defaults */
+    border: 0;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    background-color: #d9f9c5;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    background-color: #54932d;
+    color: white;
+    height: 3em;
+    text-align: center;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav_ele {
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    line-height: 3em;
+    transition: 0.3s;
+}
+
+.nav_ele:hover {
+    background-color: #2d660c;
+}
+
+#applefest_banner {
+    width: 100%;
+    z-index: 2;
+}
+
+#banner_name {
+    position: relative;
+    top: -8em;
+    text-align: center;
+    z-index: 1;
+    color: white;
+    font-size: 3em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#at_applefest_text {
+    position: relative;
+    top: -6em;
+    z-index: 1;
+    color: white;
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+    left: 1em;
+    margin-right: 1em;
+}
+
+.left_container {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.right_container {
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+
+.outer_div_odd {
+    height: 640px;
+}
+
+.div_text_right {
+    margin: 10%;
+    width: 80%;
+    margin-top: 15%;
+    text-align: center;
+}
+
+.div_text_right > h1 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.div_text_right > p {
+    font-size: 1.25em;
+}
+
+.div_img_left {
+    width: 90%;
+    max-width: 600px;
+    max-height: 900px;
+    margin: 10%;
+    margin-top: 15%;
+    margin-bottom: 20px;
+}
+
+.outer_div_even {
+    height: 640px;
+    background-color: #f7f7f7;
+}
+
+.div_text_left {
+    margin: 10%;
+    width: 80%;
+    margin-top: 15%;
+    margin-bottom: 0%;
+    text-align: center;
+}
+
+.div_text_left > h1 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.div_text_left > p {
+    font-size: 1.25em;
+}
+
+.div_img_right {
+    width: 95%;
+    max-width: 657px;
+    max-height: 850px;
+    margin-left: 0%;
+    margin-top: 5%;
+    margin-bottom: 20px;
+}
+
+.page_link {
+    color: black;
+    text-decoration: underline;
+}
+
+.page_link:hover {
+    background-color: #afed8b;
+}
+
+.emphasis { 
+    font-weight: bolder;
+}
+
+figcaption {
+    text-align: center;
+    margin-left: -10%;
+}
+
+.emphasis_QA {
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Start main page specific CSS */
+
+#learn_more_text {
+    margin: 10%;
+    width: 80%;
+    text-align: left;
+}
+
+#learn_more_text > h1 {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+#learn_more_text > p {
+    font-size: 1.25em;
+}
+
+/* End main page specific CSS */
+
+/* Start Tasting page specific CSS */
+
+#first_div {
+    margin-top: -170.84px;
+}
+
+/* End Tasting page specific CSS*/
+
+/* Begin media queries portion */
+
+@media (max-width: 480px) {
+    
+    html {
+        font-size: 1em;
+    }
+    
+    nav {
+        height: 3em;
+    }
+    
+    #first_div {
+        margin-top: -15%;
+    }
+    
+    .nav_ele {
+        line-height: 4em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        font-size: 0.8em;
+    }
+    
+    .outer_div_odd {
+        padding: 5%;
+        height: 600px;
+    }
+    
+    .outer_div_even {
+        padding: 5%;
+        height: 600px;
+    }
+    
+    .right_container {
+        float: none;
+        width: 100%;
+        height: 50%; 
+    }
+    
+    .right_container > .div_img_right {
+        display: none;
+    }
+    
+    .left_container {
+        float: none;
+        width: 100%;
+        height: 50%;
+    }
+    
+    .left_container > .div_img_left {
+        display: none;
+    }
+    
+    .right_container > .div_text_right {
+        margin-top: -80%;
+    }
+    
+    figure {
+        display: none;
+    }
+    
+    .div_text_right {
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-top: 10%;
+        margin-bottom: 25%;
+        width: 90%;
+        display: block;
+        font-size: 1em;
+        height: 100%;
+    }
+    
+    .div_text_right > h1 {
+        font-size: 1.5em;
+    }
+    
+    .div_text_left > h1 {
+        font-size: 1.5em;
+    }
+    
+    .div_text_left {
+        margin-top: 0%;
+        padding-bottom: 5%;
+        margin-bottom: 20%;
+        display: block;
+        font-size: 1em;
+        height: 100%;
+    }
+    
+    #learn_more_text {
+        margin-top: -80%;
+        padding-bottom: 5%;
+        font-size: 1em;
+    }
+    
+    #learn_more_text > h1 {
+        font-size: 1.5em;
+    }
+    
+    #banner_name {
+        font-size: 1em;
+        top: -6em;
+    }
+    
+    #at_applefest_text {
+        font-size: 1em;
+        top: -5em;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    
+    #banner_name {
+        top: -7em;
+        font-size: 1.5em;
+    }
+    
+    #at_applefest_text {
+        font-size: 1em;
+    }
+    
+    #first_div {
+        margin-top: 15%;
+    }
+    
+    nav {
+        height: 3em;
+    }
+    
+    .nav_ele {
+        line-height: 3em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        padding-left: 1em;
+        padding-right: 1em;
+        font-size: 1em;
+    }
+    
+    .outer_div_odd {
+        padding: 5%;
+        height: 600px;
+        margin-top: 30%;
+    }
+    
+    .outer_div_even {
+        padding: 5%;
+        height: 600px;
+    }
+    
+    .right_container {
+        float: none;
+        width: 100%;
+        height: 50%; 
+    }
+    
+    .right_container > .div_img_right {
+        display: none;
+    }
+    
+    .left_container {
+        float: none;
+        width: 100%;
+        height: 50%;
+    }
+    
+    .left_container > .div_img_left {
+        display: none;
+    }
+    
+    .right_container > .div_text_right {
+        margin-top: -80%;
+    }
+    
+    figure {
+        display: none;
+    }
+    
+    .div_text_right {
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-top: 10%;
+        margin-bottom: 25%;
+        width: 90%;
+        display: block;
+        font-size: 1em;
+        height: 100%;
+    }
+    
+    .div_text_right > h1 {
+        font-size: 1.5em;
+    }
+    
+    .div_text_left > h1 {
+        font-size: 1.5em;
+    }
+    
+    .div_text_left {
+        margin-top: 0%;
+        padding-bottom: 5%;
+        margin-bottom: 20%;
+        display: block;
+        font-size: 1em;
+        height: 100%;
+    }
+    
+    #learn_more_text {
+        margin-top: -80%;
+        padding-bottom: 5%;
+        font-size: 1em;
+    }
+    
+    #learn_more_text > h1 {
+        font-size: 1.5em;
+    }
+
+    
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    #banner_name {
+        top: -6em;
+    }
+    
+    nav {
+        height: 3.2em;
+    }
+    
+    .nav_ele {
+        padding-left: 2em;
+        padding-right: 2em;
+        font-size: 1.2em;
+    }
+    
+    .outer_div_odd {
+        height: 550px;
+    }
+    
+    .outer_div_even {
+        height: 550px;
+    }
+    
+    .div_text_right > h1 {
+        font-size: 1.5em;
+    }
+    
+    .div_text_left > h1 {
+        font-size: 1.5em;
+    }
+    
+    .div_text_right > p {
+        font-size: 1.2em;
+    }
+    
+    .div_text_left > p {
+        font-size: 1.2em;
+    }
+    
+    #learn_more_text > p {
+        font-size: 1    em;
+    }
+    
+    #learn_more_text > h1 {
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 1201px) {
+    #banner_name {
+        top: -8em;
+    }
+}
+
+/* End media queries portion*/
